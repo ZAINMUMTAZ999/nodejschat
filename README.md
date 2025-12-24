@@ -39,12 +39,11 @@
          1-Clone & Install
 
                   Bash
-                  git clone <your-repo-url>
-                  cd BACKEND
+                  git clone https://github.com/ZAINMUMTAZ999/nodejschat.git
                   npm install
          2 - Environment Configuration Create a .env file in the root:
                   PORT=5000
-                  MONGO_URI=your_mongodb_connection_string
+                  MONGODB_URL=mongodb+srv://cyberoid:123456123456@cluster0.pixjhjf.mongodb.net/?appName=Cluster0
                   CLIENT_URL=http://localhost:3000
          3 - Development Mode
                  npm run dev 

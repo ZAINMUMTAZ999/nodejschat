@@ -14,7 +14,7 @@ const PORT =  5000;
 connectDB();
 
 // 2. Middleware
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: "https://zainxcyberoid.vercel.app", credentials: true }));
 app.use(express.json());
 
 // 3. API Routes
@@ -23,7 +23,7 @@ app.use('/api', apiRoutes);
 // 4. Server & Socket Setup
 const server = http.createServer(app);
 const io = new Server(server, {
-  cors: { origin: "http://localhost:3000", methods: ["GET", "POST"], credentials: true },
+  cors: { origin: "https://zainxcyberoid.vercel.app", methods: ["GET", "POST"], credentials: true },
   transports: ["websocket"],
 });
 

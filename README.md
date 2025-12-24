@@ -1,15 +1,56 @@
-# 📡 Real-Time Chat Backend
+🚀 Cyberoid Real-Time Chat Engine (Backend)
+          ---A robust, event-driven backend service built to power real-time communication. This engine handles stateful WebSocket connections, message persistence, and user synchronization.
 
-The  server-side application for the Real-Time Chat system. It handles **WebSocket connections** via Socket.io and provides **REST APIs** for persistent data.
+🛠TECH STACK
 
-## 🛠️ Technology Stack
+          ---Runtime: Node.js
 
-* **Runtime:** Node.js
-* **Framework:** Express.js
-* **Real-Time:** Socket.io
-* **Database:** MongoDB + Mongoose
-* **Language:** TypeScript
-* **Deployed:** Netlify
+          ---Framework: Express.js
+
+          ---Real-time: Socket.io
+
+          ---Database: MongoDB
+
+         ---Language: TypeScript (for type safety and maintainability)
+
+
+📡SYSTEM ARCHITECTURE
+
+         ---The backend serves as a central hub between multiple clients. It uses a Hybrid API/Socket approach:
+
+         ---REST API: Handles heavy data fetching like initial user lists and message history, optimized with React Query on the frontend.
+
+
+🪟WEBSOCKETS (Socket.io) :
+         ---- Handles lightweight, high-frequency events like typing indicators, online status changes, and instant message delivery.
+
+⚡KEY FEATURES 
+         ---Bi-directional Communication: Instant message delivery via WebSocket.
+
+         ---Stateful Presence: Tracks online/offline status in real-time.
+
+
+         ---Persistence: Messages are stored in MongoDB with read/unread status tracking.
+
+         ---Sound & Toast Logic: Backend triggers specific event types that the frontend uses to manage AudioContext notification sounds.
+
+
+🧑🏻‍💻Installation & Setup
+         1-Clone & Install
+
+                  Bash
+                  git clone <your-repo-url>
+                  cd BACKEND
+                  npm install
+         2 - Environment Configuration Create a .env file in the root:
+                  PORT=5000
+                  MONGO_URI=your_mongodb_connection_string
+                  CLIENT_URL=http://localhost:3000
+         3 - Development Mode
+                 npm run dev 
+
+
+
 
 ## 📂 Project Structure
 

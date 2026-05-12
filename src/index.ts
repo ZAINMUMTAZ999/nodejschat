@@ -15,10 +15,9 @@ connectDB();
 
 // --- ALLOWED DOMAINS LIST ---
 const allowedOrigins = [
-  "https://zainxcyberoid.vercel.app",
-  "https://zainxcyberoid-git-main-zainmumtaz999s-projects.vercel.app",
-  "https://zainxcyberoid-disvl38kn-zainmumtaz999s-projects.vercel.app",
-  "http://localhost:3000" // Keep for local development
+  "https://chatwebappreactnode",
+"http://localhost:5173",
+  "http://localhost:3000", // Keep for local development
 ];
 
 // 2. Middleware

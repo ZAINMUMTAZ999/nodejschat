@@ -15,7 +15,7 @@ connectDB();
 
 // --- ALLOWED DOMAINS LIST ---
 const allowedOrigins = [
-  "https://chatwebappreactnode",
+  "https://nextjschatfrontend.vercel.app",
 "http://localhost:5173",
   "http://localhost:3000", // Keep for local development
 ];

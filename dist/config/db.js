@@ -18,7 +18,7 @@ const connectDB = () => __awaiter(void 0, void 0, void 0, function* () {
     const MONGODBURL = process.env.MONGODB_URL;
     try {
         const conn = yield mongoose_1.default.connect(MONGODBURL);
-        console.log("✅ Database connected");
+        console.log(" Database connected");
         try {
             yield mongoose_1.default.connection.collection('users').dropIndex('email_1');
         }

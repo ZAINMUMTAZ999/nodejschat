@@ -5,7 +5,7 @@ export const connectDB = async () => {
   try {
 
     const conn = await mongoose.connect(MONGODBURL);
-    console.log("✅ Database connected");
+    console.log(" Database connected");
     
    
     try {

@@ -4,10 +4,11 @@
     "module": "commonjs",
     "outDir": "./dist",
     "rootDir": "./src",
-    "strict": true,
-    "esModuleInterop": true,      // ✅ Add this
-    "allowSyntheticDefaultImports": true,  // ✅ Add this
-    "skipLibCheck": true           // ✅ Add this (fixes socket.io internal TS errors)
+   "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"]

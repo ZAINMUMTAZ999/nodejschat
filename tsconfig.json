@@ -1,6 +1,14 @@
 {
   "compilerOptions": {
+    "target": "ES2016",
+    "module": "commonjs",
     "outDir": "./dist",
-    "rootDir": "./src"
-  }
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,      // ✅ Add this
+    "allowSyntheticDefaultImports": true,  // ✅ Add this
+    "skipLibCheck": true           // ✅ Add this (fixes socket.io internal TS errors)
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
